@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
- * main - Prints the add of the Fibonacci numbers
- * Return: Always 0
+ * main - prints the add of the fibonacci numbers
+ * Return: Always 0 (success)
  */
 int main(void)
 {
 	int c;
-	int n1, n2, fn;
+	long int n1, n2, fn;
 
 	n1 = 1;
 	n2 = 2;
