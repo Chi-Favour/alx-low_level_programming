@@ -6,7 +6,7 @@
 int main(void)
 {
 	int c;
-	int n1, n2, fn;
+	long int n1, n2, fn;
 
 	n1 = 1;
 	n2 = 2;
@@ -14,7 +14,7 @@ int main(void)
 	for (c = 0; c < 48; c++)
 	{
 		fn = n1 + n2;
-		printf(', %1d", fn);
+		printf(", %1d", fn);
 		n1 = n2;
 		n2 = fn;
 	}
