@@ -1,28 +1,31 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
- * main - prints fizz buzz
+ * main - prints Fizz Buzz
  * Return: Always 0
  */
+
 int main(void)
 {
-	int n;
+	int i;
+	char f[] = "Fizz";
+	char b[] = "Buzz";
+	char fb[] = "FizzBuzz";
 
-	for (n = 1; n <= 100; n++)
+	for (i = 1; i <= 100; i++)
 	{
-		printf(" ");
+		if (i == 100)
+			printf("%s", b);
+		else if ((i % 3 == 0) && (i % 5 == 0))
+			printf("%s ", fb);
+		else if (i % 3 == 0)
+			printf("%s ", f);
+		else if (i % 5 == 0)
+			printf("%s ", b);
+		else
+			printf("%d ", i);
 	}
-		if (n % 3 == 0)
-		{
-			printf("Fizz");
-		}
-		if (n % 5 == 0)
-		{
-			printf("Buzz");
-		}
-		if (n % 3 != 0 && n % 5 != 0)
-		{
-			printf("%d", n);
-		}
-		printf('\n');
-		return (0);
+	printf("\n");
+	return (0);
 }
